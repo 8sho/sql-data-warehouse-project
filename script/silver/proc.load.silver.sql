@@ -2,7 +2,18 @@
 ======================================================
  stored procedure -> silver layer -> bronze to silver
 ======================================================
+script purpose - this stored procedure performs the ETL( extract , transform , load) process to
+tranform the 'silver' schema tables from the 'bronze' schema
+Actions performed
+  . truncates silver table
+  . inserts transformed and cleansed data from bronze to silver tables
 
+Parameters
+  . none
+  . this stored procedure does not accept any parameter or returns any value 
+
+Usage example
+EXEC silver.load_silver
 */
 
 
